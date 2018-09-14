@@ -1170,7 +1170,7 @@ babel-plugin-dynamic-import-node@2.0.0:
     babel-plugin-syntax-dynamic-import "^6.18.0"
     object.assign "^4.1.0"
 
-babel-plugin-emotion@^9.2.8:
+babel-plugin-emotion@9.2.8, babel-plugin-emotion@^9.2.8:
   version "9.2.8"
   resolved "http://localhost:4873/babel-plugin-emotion/-/babel-plugin-emotion-9.2.8.tgz#4df55ef10625c391f25b031f7e3006abac359e09"
   dependencies:
@@ -2864,7 +2864,7 @@ cosmiconfig@^5.0.0:
     js-yaml "^3.9.0"
     parse-json "^4.0.0"
 
-cosmiconfig@^5.0.5:
+cosmiconfig@^5.0.2, cosmiconfig@^5.0.5:
   version "5.0.6"
   resolved "http://localhost:4873/cosmiconfig/-/cosmiconfig-5.0.6.tgz#dca6cf680a0bd03589aff684700858c81abeeb39"
   dependencies:
@@ -4342,6 +4342,10 @@ find-cache-dir@^1.0.0:
     commondir "^1.0.1"
     make-dir "^1.0.0"
     pkg-dir "^2.0.0"
+
+find-parent-dir@^0.3.0:
+  version "0.3.0"
+  resolved "http://localhost:4873/find-parent-dir/-/find-parent-dir-0.3.0.tgz#33c44b429ab2b2f0646299c5f9f718f376ff8d54"
 
 find-root@^1.1.0:
   version "1.1.0"
