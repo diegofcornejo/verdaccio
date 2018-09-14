@@ -49,6 +49,7 @@
     "mkdirp": "0.5.1",
     "mv": "2.1.1",
     "pkginfo": "0.4.1",
+    "react-emotion": "9.2.8",
     "request": "2.87.0",
     "semver": "5.5.0",
     "verdaccio-audit": "0.2.0",
