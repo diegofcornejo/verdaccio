@@ -30,6 +30,7 @@ class Header extends Component<IProps, IState> {
     this.handleClose = this.handleClose.bind(this);
     this.handleOpenInfoDialog = this.handleOpenInfoDialog.bind(this);
     this.handleCloseInfoDialog = this.handleCloseInfoDialog.bind(this);
+    this.handleToggleLogin = this.handleToggleLogin.bind(this);
     this.renderInfoDialog = this.renderInfoDialog.bind(this);
     this.state = {
       anchorEl: null,
@@ -69,6 +70,16 @@ class Header extends Component<IProps, IState> {
     });
   }
 
+  handleToggleLogin() {
+    const {toggleLoginModal} = this.props;
+    this.setState(
+      {
+        anchorEl: null,
+      },
+      () => toggleLoginModal()
+    );
+  }
+
   renderLeftSide() {
     return (
       <Link href="/">
@@ -78,7 +89,7 @@ class Header extends Component<IProps, IState> {
   }
 
   renderRightSide() {
-    const {username = '', toggleLoginModal} = this.props;
+    const {username = ''} = this.props;
     return (
       <div>
         <IconButton color="inherit" onClick={this.handleOpenInfoDialog}>
@@ -87,7 +98,7 @@ class Header extends Component<IProps, IState> {
         {username ? (
           this.renderMenu()
         ) : (
-          <Button color="inherit" onClick={toggleLoginModal}>
+          <Button color="inherit" onClick={this.handleToggleLogin}>
             Login
           </Button>
         )}
